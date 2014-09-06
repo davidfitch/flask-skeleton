@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block header_title %}Main {% block sub_title %}{% endblock %}{% endblock %}
+{% block header_nav %}
+    <a href="{{ url_for('bp_main.link1') }}">Link 1</a> |
+    <a href="{{ url_for('bp_main.link2') }}">Link 2</a>
+{% endblock %}
+
+{% block content %}
+
+    {% block page_content %} index template {% endblock %}
+
+{% endblock %}
